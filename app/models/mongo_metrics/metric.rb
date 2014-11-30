@@ -22,6 +22,13 @@ module MongoMetrics
 			self.instrumenter_id = args[3] 
 			self.payload = args[4]
 			self.created_at	= Time.now.utc				
+		end
+
+		require "to_csv"
+		require "mongo_metrics/csv_streamer"
+
+		def to_csv
+			[name, started_at, duration, instrumenter_id, created_at].to_csv					
 		end		
 	end
 end

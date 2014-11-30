@@ -24,4 +24,8 @@ Gem::Specification.new do |s|
   s.add_dependency "mongoid", "~> 4.0.0"
 
   s.add_dependency "jquery-rails", "~> 3.0.1"
+
+  # s.add_dependency "railties", "~> 4.0.0"
+
+  # s.add_dependency "sprockets-rails", "~> 2.0.0"
 end
